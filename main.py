@@ -18,13 +18,13 @@ def get_data(filename):
     restaurant_data = pd.read_csv(filename)
     return restaurant_data
 
-# hide_menu_style ="""
-#     <style>
-#         #MainMenu {
-#             visibility: hidden;
-#         }
-#     </style>
-# """
+hide_menu_style ="""
+    <style>
+        #MainMenu {
+            visibility: hidden;
+        }
+    </style>
+"""
 
 # st.markdown(hide_menu_style, unsafe_allow_html=True)
 
@@ -231,7 +231,6 @@ def main():
 
         st.markdown("""
             Predict customer churn based on the past records.
-            The application is functional for both Online prediction and Batch data prediction.
         """)
         st.markdown("<h3></h3>", unsafe_allow_html=True)
 
@@ -239,7 +238,6 @@ def main():
         """
             <style> 
                 .main1 { 
-                   
                     color:white } 
                 }
             </style>
